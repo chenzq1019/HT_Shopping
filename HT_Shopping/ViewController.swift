@@ -29,7 +29,7 @@ extension ViewController {
         let selectIcons = ["HomeSelect","ClassificationSelect","ActivitySelect","ShopCartSelect","UserCenterSelect"]
         let titles = ["首页","分类","有料","购物车","我的"]
         let colors = ["123121","454545","66aa11","787878","a2a2a2"]
-        let vcNamelist = ["HT_HomeViewController", "HT_UserViewController","HT_UserViewController","HT_UserViewController","HT_UserViewController"]
+        let vcNamelist = ["HT_HomeViewController", "HT_UserViewController","HT_UserViewController","HT_ShopCartViewController","HT_UserViewController"]
         var vcArray : Array<HT_NavigationViewController> = Array()
         var itemArray : Array<HT_TabBarItem> = Array()
         for i in 0 ..< titles.count {
@@ -37,7 +37,7 @@ extension ViewController {
             let vcName = vcNamelist[i]
             let vcClass = NSClassFromString("\(workName).\(vcName)") as! UIViewController.Type
             let vc = vcClass.init()
-            vc.view.backgroundColor = UIColor(rgb: colors[i])
+            vc.view.backgroundColor = UIColor.randomColor
             let nav = HT_NavigationViewController(rootViewController: vc)
             vcArray.append(nav)
             let item = HT_TabBarItem(title: titles[i], normalImage: normalIcons[i], selectImage: selectIcons[i], normalColor: "333333", selectColor: "ff0000")

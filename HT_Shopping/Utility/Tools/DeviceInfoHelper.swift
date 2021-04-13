@@ -41,3 +41,8 @@ public func getAppVersion() -> String{
     return appVersion as? String ?? ""
 }
 
+public func getAppVersionStr() -> String {
+    var appVersion = getAppVersion()
+    appVersion = appVersion.replacingOccurrences(of: ".", with: "")
+    return appVersion
+}

@@ -22,6 +22,10 @@ class IndexInfoModel: HandyJSON {
     var minversion: String?
     var groupid: String?
     var promotionIds: String?
+    var devicetype : String?
+    //
+    var uTehuiIcon: String?
+    var uQianGouIcon: String?
     
     required init() {
         

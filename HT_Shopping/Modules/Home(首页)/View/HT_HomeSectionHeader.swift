@@ -32,7 +32,7 @@ class HT_HomeSectionHeader: UICollectionReusableView {
                 return
             }
             //使用if let 将可选变量转为不可选变量。用于图片展示
-            if let iconUrl = model.iconImge , iconUrl.length > 0 && iconUrl.hasPrefix("http"){
+            if let iconUrl = model.iconImge , iconUrl.count > 0 && iconUrl.hasPrefix("http"){
                 self.kiconView.kf.setImage(with: URL(string: iconUrl as String),placeholder: UIImage(named: "Recommend_icon"))
             }else {
                 self.kiconView.image = UIImage(named: "Recommend_icon")

@@ -9,6 +9,7 @@ import Foundation
 import SnapKit
 import Kingfisher
 import HandyJSON
+import MJRefresh
 
 
 let kScreenWidth : CGFloat = UIScreen.main.bounds.size.width

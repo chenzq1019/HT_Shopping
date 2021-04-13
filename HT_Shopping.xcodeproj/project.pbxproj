@@ -23,7 +23,6 @@
 		DF1967552564EC280000E42E /* UIColor+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1967542564EC280000E42E /* UIColor+Extention.swift */; };
 		DF196758256518FE0000E42E /* HT_HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF196757256518FE0000E42E /* HT_HomeViewController.swift */; };
 		DF19675B2565195D0000E42E /* HT_HomeBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF19675A2565195D0000E42E /* HT_HomeBannerView.swift */; };
-		DF19675E256519CC0000E42E /* HT_HomeHuiyuanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF19675D256519CC0000E42E /* HT_HomeHuiyuanView.swift */; };
 		DF196761256519DD0000E42E /* HT_HomeFloorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF196760256519DD0000E42E /* HT_HomeFloorView.swift */; };
 		DF1967682566109E0000E42E /* HWMultipartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1967632566109E0000E42E /* HWMultipartData.swift */; };
 		DF1967692566109E0000E42E /* HWAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1967642566109E0000E42E /* HWAPI.swift */; };
@@ -44,6 +43,10 @@
 		DF19681D2567915E0000E42E /* HT_HomeFloorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF19681C2567915E0000E42E /* HT_HomeFloorData.swift */; };
 		DF196863256BC3EA0000E42E /* IndexInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF196862256BC3EA0000E42E /* IndexInfoModel.swift */; };
 		DF19686A256CA1790000E42E /* HT_ShopCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF196869256CA1790000E42E /* HT_ShopCartViewController.swift */; };
+		DF1968BC256CEF7E0000E42E /* ModuleDatToAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1968BB256CEF7D0000E42E /* ModuleDatToAction.swift */; };
+		DF1968C2256DFB4C0000E42E /* HT_HomeHuiyuanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1968C1256DFB4C0000E42E /* HT_HomeHuiyuanCell.swift */; };
+		DF721EB8257DC63D00CD7A14 /* UserTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF721EB7257DC63D00CD7A14 /* UserTopView.swift */; };
+		DF8657232574EA2900A50666 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8657222574EA2900A50666 /* FileHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,7 +71,6 @@
 		DF1967542564EC280000E42E /* UIColor+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extention.swift"; sourceTree = "<group>"; };
 		DF196757256518FE0000E42E /* HT_HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HT_HomeViewController.swift; sourceTree = "<group>"; };
 		DF19675A2565195D0000E42E /* HT_HomeBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HT_HomeBannerView.swift; sourceTree = "<group>"; };
-		DF19675D256519CC0000E42E /* HT_HomeHuiyuanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HT_HomeHuiyuanView.swift; sourceTree = "<group>"; };
 		DF196760256519DD0000E42E /* HT_HomeFloorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HT_HomeFloorView.swift; sourceTree = "<group>"; };
 		DF1967632566109E0000E42E /* HWMultipartData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWMultipartData.swift; sourceTree = "<group>"; };
 		DF1967642566109E0000E42E /* HWAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HWAPI.swift; sourceTree = "<group>"; };
@@ -89,6 +91,10 @@
 		DF19681C2567915E0000E42E /* HT_HomeFloorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HT_HomeFloorData.swift; sourceTree = "<group>"; };
 		DF196862256BC3EA0000E42E /* IndexInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexInfoModel.swift; sourceTree = "<group>"; };
 		DF196869256CA1790000E42E /* HT_ShopCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HT_ShopCartViewController.swift; sourceTree = "<group>"; };
+		DF1968BB256CEF7D0000E42E /* ModuleDatToAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleDatToAction.swift; sourceTree = "<group>"; };
+		DF1968C1256DFB4C0000E42E /* HT_HomeHuiyuanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HT_HomeHuiyuanCell.swift; sourceTree = "<group>"; };
+		DF721EB7257DC63D00CD7A14 /* UserTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTopView.swift; sourceTree = "<group>"; };
+		DF8657222574EA2900A50666 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,10 +245,10 @@
 			isa = PBXGroup;
 			children = (
 				DF19675A2565195D0000E42E /* HT_HomeBannerView.swift */,
-				DF19675D256519CC0000E42E /* HT_HomeHuiyuanView.swift */,
 				DF196760256519DD0000E42E /* HT_HomeFloorView.swift */,
 				DF196812256759700000E42E /* HT_HomePrdCell.swift */,
 				DF19681625676AF80000E42E /* HT_HomeSectionHeader.swift */,
+				DF1968C1256DFB4C0000E42E /* HT_HomeHuiyuanCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -343,6 +349,8 @@
 			isa = PBXGroup;
 			children = (
 				DF19676F256619000000E42E /* DeviceInfoHelper.swift */,
+				DF1968BB256CEF7D0000E42E /* ModuleDatToAction.swift */,
+				DF8657222574EA2900A50666 /* FileHelper.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -358,6 +366,7 @@
 		DF19680A256670D60000E42E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DF721EB7257DC63D00CD7A14 /* UserTopView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -507,7 +516,7 @@
 			files = (
 				DF1967682566109E0000E42E /* HWMultipartData.swift in Sources */,
 				DF19680C256670F50000E42E /* HT_UserViewController.swift in Sources */,
-				DF19675E256519CC0000E42E /* HT_HomeHuiyuanView.swift in Sources */,
+				DF1968BC256CEF7E0000E42E /* ModuleDatToAction.swift in Sources */,
 				DF19676B2566109E0000E42E /* HWNetworkingOC.swift in Sources */,
 				DF19686A256CA1790000E42E /* HT_ShopCartViewController.swift in Sources */,
 				DF196863256BC3EA0000E42E /* IndexInfoModel.swift in Sources */,
@@ -524,7 +533,9 @@
 				DF1966F22563B6180000E42E /* ViewController.swift in Sources */,
 				DF196810256672F10000E42E /* HomeList.swift in Sources */,
 				DF196758256518FE0000E42E /* HT_HomeViewController.swift in Sources */,
+				DF8657232574EA2900A50666 /* FileHelper.swift in Sources */,
 				DF1967442564C5210000E42E /* HT_TabBarItem.swift in Sources */,
+				DF1968C2256DFB4C0000E42E /* HT_HomeHuiyuanCell.swift in Sources */,
 				DF19676A2566109E0000E42E /* HWNetworkingError.swift in Sources */,
 				DF19681D2567915E0000E42E /* HT_HomeFloorData.swift in Sources */,
 				DF19677D256641610000E42E /* HT_Config.swift in Sources */,
@@ -536,6 +547,7 @@
 				DF1966F02563B6180000E42E /* SceneDelegate.swift in Sources */,
 				DF1967412564C2820000E42E /* HT_NavigationViewController.swift in Sources */,
 				DF19673A2564C2220000E42E /* HT_BaseViewController.swift in Sources */,
+				DF721EB8257DC63D00CD7A14 /* UserTopView.swift in Sources */,
 				DF19675B2565195D0000E42E /* HT_HomeBannerView.swift in Sources */,
 				DF1967692566109E0000E42E /* HWAPI.swift in Sources */,
 			);
@@ -697,6 +709,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 4.4.8;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uleapp.HT-Shopping";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -724,6 +737,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 4.4.8;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uleapp.HT-Shopping";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -812,6 +826,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 4.4.8;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uleapp.HT-Shopping";
 				PRODUCT_NAME = "$(TARGET_NAME)";
