@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HT_HomeHuiyuanCell: UICollectionViewCell {
+class HT_HomeHuiyuanCell: UICollectionViewCell,HTCellProtocol {
     lazy var mPrdImageView : UIImageView = {
         let imageView = UIImageView()
         return imageView

@@ -64,7 +64,7 @@ class HT_HomeFloorCell: UICollectionViewCell {
 }
 
 
-class HT_HomeFloorView: UICollectionViewCell {
+class HT_HomeFloorView: UICollectionViewCell,HTCellProtocol {
     
     var floorItems : [HT_FloorPrd]? {
         didSet {

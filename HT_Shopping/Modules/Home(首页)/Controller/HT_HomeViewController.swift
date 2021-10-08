@@ -42,6 +42,7 @@ class HT_HomeViewController: HT_BaseViewController {
         collection.register(HT_HomeSectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: sectionHeaderId)
         collection.register(HT_HomeFloorView.self, forCellWithReuseIdentifier: floorCollectionID)
         collection.register(HT_HomeHuiyuanCell.self, forCellWithReuseIdentifier: utehuiCellID)
+        collection.register(HT_HomeMiddelCell.self, forCellWithReuseIdentifier: "HT_HomeMiddelCell")
         collection.contentInset = UIEdgeInsets(top: kScreenWidth * (1 / 2.5), left: 0, bottom: 0, right: 0)
         return collection
     }()
@@ -99,7 +100,7 @@ extension HT_HomeViewController: UICollectionViewDataSource, UICollectionViewDel
         let group = self.mViewModel.homeGroups[indexPath.section]
         let prdItem = group.prdList?[indexPath.row]
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: group.cellID!, for: indexPath)
+        let cell  = collectionView.dequeueReusableCell(withReuseIdentifier: group.cellID!, for: indexPath)
         cell.backgroundColor = UIColor.white
         switch prdItem {
         case let item as HomeListItem:
@@ -113,7 +114,10 @@ extension HT_HomeViewController: UICollectionViewDataSource, UICollectionViewDel
             let cell2 = cell as! HT_HomeHuiyuanCell
             cell2.cellModel = item
             default:
+                let decell = cell as! HTCellProtocol
+                decell.setModel?(data: prdItem ?? nil )
                 print("===")
+                
         }
         
         return cell

@@ -24,7 +24,11 @@ class UserTopView: UIView {
         label.font = UIFont.systemFont(ofSize: 15)
         return label
     }()
-    
+    lazy var backImageView : UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "UserHeadviewBG.png")
+        return imageView
+    }()
     override init(frame: CGRect) {
         super.init(frame: frame)
         loadUI()
@@ -38,6 +42,10 @@ class UserTopView: UIView {
 
 extension UserTopView {
     fileprivate func loadUI() -> Void {
+        addSubview(self.backImageView)
+        self.backImageView.snp.makeConstraints { (make) in
+            make.edges.equalTo(self)
+        }
         addSubview(self.iconImageView)
         self.iconImageView.snp.makeConstraints { (make) in
             make.left.equalTo(self).offset(10)
@@ -48,6 +56,29 @@ extension UserTopView {
         self.titleLabel.snp.makeConstraints { (make) in
             make.left.equalTo(self.iconImageView.snp_rightMargin).offset(20)
             make.centerY.equalTo(self.iconImageView)
+        }
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(click))
+        self.addGestureRecognizer(tap)
+    }
+    
+    @objc func click(sender:UITapGestureRecognizer){
+//        print(sender)
+        let vc = UIViewController.currentViewController
+//        print(vc)
+        vc.push(name: "HT_LoginViewController", isNib: false, params: ["name":"chenzq"])
+    }
+}
+
+extension UserTopView {
+    func updateUserCenterView() -> Void {
+        if UleUserInfor.share.isLogin {
+            
+        }
+        if let url = UleUserInfor.share.headIconUrl, url.count > 0 {
+            let array = url.components(separatedBy: "##")
+            guard let imageurl = array.first else { return }
+            self.iconImageView.kf.setImage(with: URL(string: imageurl))
         }
     }
 }

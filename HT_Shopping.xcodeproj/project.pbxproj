@@ -46,7 +46,13 @@
 		DF1968BC256CEF7E0000E42E /* ModuleDatToAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1968BB256CEF7D0000E42E /* ModuleDatToAction.swift */; };
 		DF1968C2256DFB4C0000E42E /* HT_HomeHuiyuanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1968C1256DFB4C0000E42E /* HT_HomeHuiyuanCell.swift */; };
 		DF721EB8257DC63D00CD7A14 /* UserTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF721EB7257DC63D00CD7A14 /* UserTopView.swift */; };
+		DF81C9B126F042A200664BF2 /* UleUserInfor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF81C9B026F042A200664BF2 /* UleUserInfor.swift */; };
 		DF8657232574EA2900A50666 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8657222574EA2900A50666 /* FileHelper.swift */; };
+		DFA2329D26EAEC2400A891B5 /* UIButton+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2329C26EAEC2400A891B5 /* UIButton+Extention.swift */; };
+		DFEC142C26E09DEC002E59C7 /* HT_HomeMiddelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEC142B26E09DEC002E59C7 /* HT_HomeMiddelCell.swift */; };
+		DFEC143526E2115B002E59C7 /* HT_LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEC143426E2115A002E59C7 /* HT_LoginViewController.swift */; };
+		DFEC143826E212E6002E59C7 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEC143726E212E6002E59C7 /* UIViewController+Extension.swift */; };
+		DFEC143D26E5B6E2002E59C7 /* HT_NormalLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEC143C26E5B6E1002E59C7 /* HT_NormalLoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,7 +100,14 @@
 		DF1968BB256CEF7D0000E42E /* ModuleDatToAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleDatToAction.swift; sourceTree = "<group>"; };
 		DF1968C1256DFB4C0000E42E /* HT_HomeHuiyuanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HT_HomeHuiyuanCell.swift; sourceTree = "<group>"; };
 		DF721EB7257DC63D00CD7A14 /* UserTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTopView.swift; sourceTree = "<group>"; };
+		DF7F6A5B26EF41C600607762 /* HT_Shopping-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HT_Shopping-Bridging-Header.h"; sourceTree = "<group>"; };
+		DF81C9B026F042A200664BF2 /* UleUserInfor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UleUserInfor.swift; sourceTree = "<group>"; };
 		DF8657222574EA2900A50666 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
+		DFA2329C26EAEC2400A891B5 /* UIButton+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extention.swift"; sourceTree = "<group>"; };
+		DFEC142B26E09DEC002E59C7 /* HT_HomeMiddelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HT_HomeMiddelCell.swift; sourceTree = "<group>"; };
+		DFEC143426E2115A002E59C7 /* HT_LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HT_LoginViewController.swift; sourceTree = "<group>"; };
+		DFEC143726E212E6002E59C7 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		DFEC143C26E5B6E1002E59C7 /* HT_NormalLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HT_NormalLoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +172,7 @@
 				DF1966F62563B6190000E42E /* Assets.xcassets */,
 				DF1966F82563B6190000E42E /* LaunchScreen.storyboard */,
 				DF1966FB2563B6190000E42E /* Info.plist */,
+				DF7F6A5B26EF41C600607762 /* HT_Shopping-Bridging-Header.h */,
 			);
 			path = HT_Shopping;
 			sourceTree = "<group>";
@@ -179,6 +193,7 @@
 		DF1967242563D2080000E42E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DFEC142E26E1F607002E59C7 /* Login(登录) */,
 				DF1967282563D2700000E42E /* ShopCart(购物车) */,
 				DF1967272563D25F0000E42E /* User(个人中心) */,
 				DF1967262563D2520000E42E /* Home(首页) */,
@@ -249,6 +264,7 @@
 				DF196812256759700000E42E /* HT_HomePrdCell.swift */,
 				DF19681625676AF80000E42E /* HT_HomeSectionHeader.swift */,
 				DF1968C1256DFB4C0000E42E /* HT_HomeHuiyuanCell.swift */,
+				DFEC142B26E09DEC002E59C7 /* HT_HomeMiddelCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -298,6 +314,8 @@
 			children = (
 				DF1967542564EC280000E42E /* UIColor+Extention.swift */,
 				DF1967F825665C8A0000E42E /* Dictionary+extension.swift */,
+				DFEC143726E212E6002E59C7 /* UIViewController+Extension.swift */,
+				DFA2329C26EAEC2400A891B5 /* UIButton+Extention.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -400,6 +418,40 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		DFEC142E26E1F607002E59C7 /* Login(登录) */ = {
+			isa = PBXGroup;
+			children = (
+				DFEC143B26E5B65A002E59C7 /* Model */,
+				DFEC143A26E5B650002E59C7 /* View */,
+				DFEC143326E210DE002E59C7 /* ViewController */,
+			);
+			path = "Login(登录)";
+			sourceTree = "<group>";
+		};
+		DFEC143326E210DE002E59C7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DFEC143426E2115A002E59C7 /* HT_LoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DFEC143A26E5B650002E59C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DFEC143C26E5B6E1002E59C7 /* HT_NormalLoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DFEC143B26E5B65A002E59C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF81C9B026F042A200664BF2 /* UleUserInfor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -412,6 +464,7 @@
 				DF1966E72563B6180000E42E /* Frameworks */,
 				DF1966E82563B6180000E42E /* Resources */,
 				B6F4AFA4DF3EE01632F894E8 /* [CP] Embed Pods Frameworks */,
+				DD930FC23BDA549AF5C27761 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -433,6 +486,7 @@
 				TargetAttributes = {
 					DF1966E92563B6180000E42E = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -507,6 +561,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HT_Shopping/Pods-HT_Shopping-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DD930FC23BDA549AF5C27761 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HT_Shopping/Pods-HT_Shopping-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HT_Shopping/Pods-HT_Shopping-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HT_Shopping/Pods-HT_Shopping-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -532,6 +603,7 @@
 				DF196806256667FB0000E42E /* HomeBanner.swift in Sources */,
 				DF1966F22563B6180000E42E /* ViewController.swift in Sources */,
 				DF196810256672F10000E42E /* HomeList.swift in Sources */,
+				DFEC143526E2115B002E59C7 /* HT_LoginViewController.swift in Sources */,
 				DF196758256518FE0000E42E /* HT_HomeViewController.swift in Sources */,
 				DF8657232574EA2900A50666 /* FileHelper.swift in Sources */,
 				DF1967442564C5210000E42E /* HT_TabBarItem.swift in Sources */,
@@ -540,12 +612,17 @@
 				DF19681D2567915E0000E42E /* HT_HomeFloorData.swift in Sources */,
 				DF19677D256641610000E42E /* HT_Config.swift in Sources */,
 				DF19677525663F460000E42E /* API.swift in Sources */,
+				DFEC143826E212E6002E59C7 /* UIViewController+Extension.swift in Sources */,
 				DF1967F925665C8A0000E42E /* Dictionary+extension.swift in Sources */,
+				DFA2329D26EAEC2400A891B5 /* UIButton+Extention.swift in Sources */,
 				DF1967472564C53A0000E42E /* HT_TabBarItemView.swift in Sources */,
 				DF1967FC25665EEB0000E42E /* HT_HomeViewModel.swift in Sources */,
+				DFEC142C26E09DEC002E59C7 /* HT_HomeMiddelCell.swift in Sources */,
 				DF1966EE2563B6180000E42E /* AppDelegate.swift in Sources */,
+				DF81C9B126F042A200664BF2 /* UleUserInfor.swift in Sources */,
 				DF1966F02563B6180000E42E /* SceneDelegate.swift in Sources */,
 				DF1967412564C2820000E42E /* HT_NavigationViewController.swift in Sources */,
+				DFEC143D26E5B6E2002E59C7 /* HT_NormalLoginView.swift in Sources */,
 				DF19673A2564C2220000E42E /* HT_BaseViewController.swift in Sources */,
 				DF721EB8257DC63D00CD7A14 /* UserTopView.swift in Sources */,
 				DF19675B2565195D0000E42E /* HT_HomeBannerView.swift in Sources */,
@@ -610,6 +687,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -671,6 +749,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -697,14 +776,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 475QH33KPT;
+				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
 					BETA,
 				);
 				INFOPLIST_FILE = HT_Shopping/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -714,6 +796,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uleapp.HT-Shopping";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG BETA";
+				SWIFT_OBJC_BRIDGING_HEADER = "HT_Shopping/HT_Shopping-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -725,14 +809,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 475QH33KPT;
+				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
 					PRD,
 				);
 				INFOPLIST_FILE = HT_Shopping/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -742,6 +829,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uleapp.HT-Shopping";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PRD;
+				SWIFT_OBJC_BRIDGING_HEADER = "HT_Shopping/HT_Shopping-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -782,6 +870,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -814,14 +903,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 475QH33KPT;
+				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
 					PRD,
 				);
 				INFOPLIST_FILE = HT_Shopping/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -831,6 +923,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.uleapp.HT-Shopping";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG PRD";
+				SWIFT_OBJC_BRIDGING_HEADER = "HT_Shopping/HT_Shopping-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

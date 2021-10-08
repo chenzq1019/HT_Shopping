@@ -1,22 +1,33 @@
 PODS:
   - Alamofire (5.4.0)
   - HandyJSON (5.0.2)
+  - IQKeyboardManagerSwift (6.5.6)
   - Kingfisher (5.15.7):
     - Kingfisher/Core (= 5.15.7)
   - Kingfisher/Core (5.15.7)
+  - MBProgressHUD (1.2.0)
   - MJRefresh (3.5.0)
   - SnapKit (5.0.1)
   - SwiftyJSON (5.0.0)
+  - UleSecurityKit (1.0.5)
 
 DEPENDENCIES:
   - Alamofire
   - HandyJSON
+  - IQKeyboardManagerSwift
   - Kingfisher
+  - MBProgressHUD
   - MJRefresh
   - SnapKit
   - SwiftyJSON
+  - UleSecurityKit
 
 SPEC REPOS:
+  http://git.uletm.com/mobile-app-library/ios/ulespec.git:
+    - UleSecurityKit
+  https://github.com/CocoaPods/Specs.git:
+    - IQKeyboardManagerSwift
+    - MBProgressHUD
   trunk:
     - Alamofire
     - HandyJSON
@@ -28,11 +39,14 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   Kingfisher: 6e1a13523fcb1c86924ce53affe4ac957e544d59
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  UleSecurityKit: fd2d7ff0a98dd8748eb979076ba5011c3d73ecd7
 
-PODFILE CHECKSUM: 3dfc58a4ce4b5058b54f9652b6699d38ace75f5d
+PODFILE CHECKSUM: 72918443fc87291b98698fc2784289ac2b074ded
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.1

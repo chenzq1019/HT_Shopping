@@ -18,7 +18,7 @@ class HT_HomeGroup: NSObject {
     var priority : Int = 0
     var backgroudimage : String?
     var sectionInset : UIEdgeInsets? = UIEdgeInsets.zero
-    var prdList : [AnyObject]? = Array<AnyObject>()
+    var prdList : [Any]? = Array<Any>()
     override init() {
         self.titleName = ""
         self.iconImge = ""

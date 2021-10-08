@@ -26,6 +26,7 @@ class IndexInfoModel: HandyJSON {
     //
     var uTehuiIcon: String?
     var uQianGouIcon: String?
+    var change_attri: String?
     
     required init() {
         

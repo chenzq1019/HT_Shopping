@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class HT_HomePrdCell: UICollectionViewCell {
+class HT_HomePrdCell: UICollectionViewCell,HTCellProtocol {
     lazy var prdImageView : UIImageView = {
         let view = UIImageView()
         return view

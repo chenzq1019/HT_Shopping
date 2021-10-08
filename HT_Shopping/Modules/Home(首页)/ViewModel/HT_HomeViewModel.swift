@@ -23,6 +23,7 @@ class HT_HomeViewModel: NSObject {
     var homeMorePrd : HT_HomeGroup?
     var homeFloors : [HT_HomeGroup]? = []
     var homeHuiyuan : [HT_HomeGroup]? = []
+    var homeMiddel : [HT_HomeGroup]? = []
 
     func requestHomeBanner() -> Void {
         
@@ -62,6 +63,10 @@ class HT_HomeViewModel: NSObject {
                 self.homeGroups =  self.homeGroups + huiyuan
             }
             
+            if let middle = self.homeMiddel{
+                self.homeGroups = self.homeGroups + middle
+            }
+            
             self.homeGroups.sort { (a, b) -> Bool in
                 a.priority < b.priority
             }
@@ -69,7 +74,7 @@ class HT_HomeViewModel: NSObject {
         }
         
     }
-    
+    //更多
     public func requestMorePrdList() -> Void{
         
         HN.fetch(API.Home.list, parameters: nil, headers: nil).success {[weak self] (response) in
@@ -93,7 +98,7 @@ class HT_HomeViewModel: NSObject {
             self?.requestGroup.leave()
         }
     }
-    
+    //楼层
     public func requestFloorList() ->Void{
         HN.fetch(API.Home.floor, parameters: nil, headers: nil).success {[weak self] (response) in
             if let data = HT_HomeFloorData.deserialize(from: response as? Dictionary) , let array = data.data {
@@ -123,7 +128,7 @@ class HT_HomeViewModel: NSObject {
             self?.requestGroup.leave()
         }
     }
-    
+    //中间模块
     func requestMidModulesInfo() -> Void {
         HN.fetch(API.Home.midleModule, parameters: nil, headers: nil).success { [weak self] (response) in
             guard let recommandInfo = RecommendInfo.deserialize(from: response as? Dictionary) else {return}
@@ -135,18 +140,26 @@ class HT_HomeViewModel: NSObject {
                 }
                 return false
             }
-            let midleBanner = array?.filter({ (groupModel) -> Bool in
-                if let sectionId = groupModel.sectionID{
-                    return sectionId == "5"
+            let midleBanner = recommandInfo.indexInfo?.filter({ (groupModel) -> Bool in
+                if let sectionId = groupModel.groupid{
+                    return sectionId == "12"
                 }
                 return false
             })
+            self?.homeMiddel?.removeAll()
+            if let middle = midleBanner {
+                let middleGroup = self?.frechMiddleModel(indexInfoArray: middle)
+                self?.homeMiddel?.append(middleGroup!)
+            }
+            
             //单独处理会员section
             self?.homeHuiyuan?.removeAll()
-            if let huiyuan = huiyuanGroup?.first {
-                let groupModel = self?.fretchUTehuiModel(groupModel: huiyuan)
-                if let modle = groupModel {
-                    self?.homeHuiyuan?.append(modle)
+            if let huiyuanlist = huiyuanGroup {
+                for item in huiyuanlist {
+                    let groupModel = self?.fretchUTehuiModel(groupModel: item)
+                    if let modle = groupModel {
+                        self?.homeHuiyuan?.append(modle)
+                    }
                 }
             }
             //处理中间banner数据
@@ -180,7 +193,7 @@ class HT_HomeViewModel: NSObject {
     
     func fretchUTehuiModel(groupModel: HT_HomeGroup) -> HT_HomeGroup {
         var imageArray : [String] = []
-        var newPrdList : [AnyObject] = []
+        var newPrdList : [Any] = []
         if let prdList = groupModel.prdList {
             if prdList.count > 1 {
                 for (index, item) in prdList.enumerated() {
@@ -208,6 +221,20 @@ class HT_HomeViewModel: NSObject {
         utehuiGourp.prdList = newPrdList
         utehuiGourp.priority = groupModel.priority
         return utehuiGourp
+    }
+    
+    func frechMiddleModel(indexInfoArray: [IndexInfoModel]) -> HT_HomeGroup {
+        let newGroup = HT_HomeGroup()
+        if let indexInfor = indexInfoArray.first {
+            newGroup.priority  = Int(indexInfor.groupsort!)!
+            newGroup.sectionID = indexInfor.groupid
+        }
+        newGroup.headSize = CGSize.zero
+        newGroup.cellID = "HT_HomeMiddelCell"
+        newGroup.itemSize = CGSize(width: kScreenWidth, height: 220)
+        let arrya = [indexInfoArray]
+        newGroup.prdList = arrya
+        return newGroup
     }
     
 }

@@ -47,4 +47,12 @@ struct API {
         static var midleModule : APIItem = APIItem(kCDNDomain + "/mobilead/v2/recommend/featuredGets/app/0/ule_index_2nd_" + p_code + "-ule_index_3rd_" + p_code + "-ule_index_5th_" + p_code + "/null.html", m: .get)
         
     }
+    
+    struct Login {
+        static var accountLogin: APIItem = APIItem(kServersDomain + "/appuser/user/login.do", m: .post)
+    }
+    
+    struct UserCenter {
+        static var userInfo : APIItem = APIItem(kServersDomain + "/appuser/user/getUserPic.do",m: .post)
+    }
 }
