@@ -80,6 +80,21 @@ extension HT_HomeViewController {
 
 extension HT_HomeViewController {
     func loadUI() -> Void {
+        self.hx_backgroundImage = UIImage(named: "image0.png")
+        title = "首页"
+//        let lable = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 40))
+//        lable.text = "首页"
+////        lable.backgroundColor = .yellow
+//        lable.textAlignment = .center
+//        lable.textColor = .red
+//        self.navigationItem.titleView = lable
+//        let rightBtn = UIBarButtonItem(title: "扫一扫", style: .plain, target: self, action: nil)
+        let rightBtn = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        rightBtn.setTitle("扫一扫", for: .normal)
+        rightBtn.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+        let rg = UIBarButtonItem(customView: rightBtn)
+        self.navigationItem.rightBarButtonItems = [rg]
+        hx_shadowHidden = true
         self.view.addSubview(self.mCollection)
         self.mCollection.snp.makeConstraints { (make) in
             make.edges.equalTo(self.view)

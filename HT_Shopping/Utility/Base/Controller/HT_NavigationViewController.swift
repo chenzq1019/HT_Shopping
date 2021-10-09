@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HT_NavigationViewController: UINavigationController {
+class HT_NavigationViewController: HXNavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

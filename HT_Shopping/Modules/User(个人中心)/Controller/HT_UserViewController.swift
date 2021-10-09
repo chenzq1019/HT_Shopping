@@ -33,14 +33,15 @@ class HT_UserViewController: HT_BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 //        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
+//        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.shadowImage = UIImage()
+        hx_barAlpha = 0.0
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
-        self.navigationController?.navigationBar.shadowImage = nil
+//        self.navigationController?.navigationBar.isTranslucent = true
+//        self.navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
+//        self.navigationController?.navigationBar.shadowImage = nil
     }
     
 }

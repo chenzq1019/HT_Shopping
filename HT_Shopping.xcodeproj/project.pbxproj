@@ -49,6 +49,9 @@
 		DF81C9B126F042A200664BF2 /* UleUserInfor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF81C9B026F042A200664BF2 /* UleUserInfor.swift */; };
 		DF8657232574EA2900A50666 /* FileHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8657222574EA2900A50666 /* FileHelper.swift */; };
 		DFA2329D26EAEC2400A891B5 /* UIButton+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA2329C26EAEC2400A891B5 /* UIButton+Extention.swift */; };
+		DFBBE3F027119A6800AF6AB1 /* UIViewController+HXNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBBE3ED27119A6800AF6AB1 /* UIViewController+HXNavigationBar.swift */; };
+		DFBBE3F127119A6800AF6AB1 /* HXFakeNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBBE3EE27119A6800AF6AB1 /* HXFakeNavigationBar.swift */; };
+		DFBBE3F227119A6800AF6AB1 /* HXNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFBBE3EF27119A6800AF6AB1 /* HXNavigationController.swift */; };
 		DFEC142C26E09DEC002E59C7 /* HT_HomeMiddelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEC142B26E09DEC002E59C7 /* HT_HomeMiddelCell.swift */; };
 		DFEC143526E2115B002E59C7 /* HT_LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEC143426E2115A002E59C7 /* HT_LoginViewController.swift */; };
 		DFEC143826E212E6002E59C7 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEC143726E212E6002E59C7 /* UIViewController+Extension.swift */; };
@@ -104,6 +107,9 @@
 		DF81C9B026F042A200664BF2 /* UleUserInfor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UleUserInfor.swift; sourceTree = "<group>"; };
 		DF8657222574EA2900A50666 /* FileHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHelper.swift; sourceTree = "<group>"; };
 		DFA2329C26EAEC2400A891B5 /* UIButton+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extention.swift"; sourceTree = "<group>"; };
+		DFBBE3ED27119A6800AF6AB1 /* UIViewController+HXNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+HXNavigationBar.swift"; sourceTree = "<group>"; };
+		DFBBE3EE27119A6800AF6AB1 /* HXFakeNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXFakeNavigationBar.swift; sourceTree = "<group>"; };
+		DFBBE3EF27119A6800AF6AB1 /* HXNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXNavigationController.swift; sourceTree = "<group>"; };
 		DFEC142B26E09DEC002E59C7 /* HT_HomeMiddelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HT_HomeMiddelCell.swift; sourceTree = "<group>"; };
 		DFEC143426E2115A002E59C7 /* HT_LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HT_LoginViewController.swift; sourceTree = "<group>"; };
 		DFEC143726E212E6002E59C7 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -204,6 +210,7 @@
 		DF1967252563D2190000E42E /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				DFBBE3EC27119A6800AF6AB1 /* CustemNavi */,
 			);
 			path = ThirdLib;
 			sourceTree = "<group>";
@@ -418,6 +425,16 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		DFBBE3EC27119A6800AF6AB1 /* CustemNavi */ = {
+			isa = PBXGroup;
+			children = (
+				DFBBE3ED27119A6800AF6AB1 /* UIViewController+HXNavigationBar.swift */,
+				DFBBE3EE27119A6800AF6AB1 /* HXFakeNavigationBar.swift */,
+				DFBBE3EF27119A6800AF6AB1 /* HXNavigationController.swift */,
+			);
+			path = CustemNavi;
+			sourceTree = "<group>";
+		};
 		DFEC142E26E1F607002E59C7 /* Login(登录) */ = {
 			isa = PBXGroup;
 			children = (
@@ -597,8 +614,10 @@
 				DF196770256619000000E42E /* DeviceInfoHelper.swift in Sources */,
 				DF196761256519DD0000E42E /* HT_HomeFloorView.swift in Sources */,
 				DF19674A2564C84E0000E42E /* HT_Marco.swift in Sources */,
+				DFBBE3F127119A6800AF6AB1 /* HXFakeNavigationBar.swift in Sources */,
 				DF19681A2567901C0000E42E /* HT_HomeGroup.swift in Sources */,
 				DF196813256759700000E42E /* HT_HomePrdCell.swift in Sources */,
+				DFBBE3F027119A6800AF6AB1 /* UIViewController+HXNavigationBar.swift in Sources */,
 				DF1967552564EC280000E42E /* UIColor+Extention.swift in Sources */,
 				DF196806256667FB0000E42E /* HomeBanner.swift in Sources */,
 				DF1966F22563B6180000E42E /* ViewController.swift in Sources */,
@@ -626,6 +645,7 @@
 				DF19673A2564C2220000E42E /* HT_BaseViewController.swift in Sources */,
 				DF721EB8257DC63D00CD7A14 /* UserTopView.swift in Sources */,
 				DF19675B2565195D0000E42E /* HT_HomeBannerView.swift in Sources */,
+				DFBBE3F227119A6800AF6AB1 /* HXNavigationController.swift in Sources */,
 				DF1967692566109E0000E42E /* HWAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
